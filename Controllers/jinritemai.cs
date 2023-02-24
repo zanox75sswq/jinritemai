@@ -33,8 +33,9 @@ namespace jinritemai.Controllers
                     {
                         var video_json = await GetUrls_async(string.Format("https://buyin.jinritemai.com/api/authorStatData/authorVideoDetailList?uid={0}&page=1&with_product=true&msToken=R6qCXtkJvuO3ARWy12SindWoho9VE4FNTNDCs5N7oRPYqNKBcBuTrTXF2bBweV4QxVbodX8VJUJH__WpaxlcDMhoTBn7FRJXLht6XGUia_KbJyFaloVddw==&X-Bogus=DFSzswVu9khANn/xSgJ83YXAIQ-M&_signature=_02B4Z6wo00001wikMCgAAIDCa67wQLh664sIpDSAAKHbY4FMpZbWu2qakRxjlNRfbqK8DNwagzhUcj-3mfzBTmWmnjhkweS5yWsTtypNCPLtwkJsptmPhnZ.W2CF6OXhVIkF8j44WGkkc-D039", k.author_base.uid), "");
                         Video.Root video_rt = JsonConvert.DeserializeObject<Video.Root>(video_json);
-
-                        //分页total 条数+1  
+                        
+                        
+                        //分页total 条数+1   
                     }
 
                 }
